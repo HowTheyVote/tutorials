@@ -1,7 +1,9 @@
 name: Build and Deploy
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 1 * *"
 
 jobs:
   build:
@@ -16,10 +18,14 @@ jobs:
       - name: Install the dependencies
         run: |
           python -m pip install -r requirements.txt
-      - name: Build the JupyterLite site
+      - name: Assemble /content directory
         run: |
           cp README.md content
-          jupyter lite build --contents content --output-dir dist
+          wget https://github.com/HowTheyVote/data/releases/latest/download/export.zip
+          unzip export.zip -d content/data/
+          find content/data -type f ! -name "*.csv" -delete
+      - name: Build JupyterLite site
+        run: jupyter lite build --contents content --output-dir dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
