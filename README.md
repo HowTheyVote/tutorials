@@ -23,3 +23,7 @@ We highly value any feedback on the existing ones, as well as any requests for f
 
 > [!NOTE]  
 > In order to help us make the tutorials as useful as possible, provide feedback by filling out [this (very short) form](https://tally.so/r/nrbogM).
+
+## License
+
+Code provided as part of the Tutorials is licensed under the [AGPL v3](https://www.gnu.org/licenses/agpl-3.0.en.html). Explanatory texts are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). 
