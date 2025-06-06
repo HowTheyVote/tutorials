@@ -1,29 +1,25 @@
-# JupyterLite Demo
+# [HowTheyVote.eu](https://howtheyvote.eu/) Tutorials
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
+We provide tutorials on how to work with the HowTheyVote.eu [data set](https://github.com/howtheyVote/data).
+These tutorials are oriented towards specific, common scenarios we and many users faced and aim at providing a blue-print to get started with our data set in an easy and accessible way.
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
+We assume no prior knowledge about the data or the European Parliament. However, basic `python` knowledge and some amount of familiarity with `pandas` are required.
 
-## ✨ Try it in your browser ✨
+> [!NOTE]  
+> We use [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/). For you, this means **zero setup** is required. Just click one of the links below and you are good to go. There is no need to install anything on your machine or download any data. You will be able to start immidiately, inside of a familiar Jupyter Notebook environment.
 
-➡️ **https://jupyterlite.github.io/demo**
+## Available Tutorials
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+- Identifying Close Votes on Amendments \[[LINK](https://howtheyvote.github.io/tutorials/lab/index.html?path=close_amendment_votes.ipynb)\]
+- Over the years, which countries have been the focus of parliamentary discussions? \[[LINK](https://howtheyvote.github.io/tutorials/lab/index.html?path=country_trends.ipynb)\]
 
-## Requirements
+## Feedback And More
 
-JupyterLite is being tested against modern web browsers:
+We are actively working on further tutorials.
 
-- Firefox 90+
-- Chromium 89+
+We highly value any feedback on the existing ones, as well as any requests for future tutorials that would be of value to you!
 
-## Deploy your JupyterLite website on GitHub Pages
 
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
 
-## Further Information and Updates
-
-For more info, keep an eye on the JupyterLite documentation:
-
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
+> [!NOTE]  
+> In order to help us make the tutorials as useful as possible, provide feedback by filling out [this (very short) form](https://tally.so/r/nrbogM).
