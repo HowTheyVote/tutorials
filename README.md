@@ -12,6 +12,7 @@ We assume no prior knowledge about the data or the European Parliament. However,
 
 - Identifying Close Votes on Amendments \[[LINK](https://howtheyvote.github.io/tutorials/lab/index.html?path=close_amendment_votes.ipynb)\]
 - Over the years, which countries have been the focus of parliamentary discussions? \[[LINK](https://howtheyvote.github.io/tutorials/lab/index.html?path=country_trends.ipynb)\]
+- Did the Social Democrats vote more often together with the far-right than the Conservatives - Merz 2025 summer interview Fact Check \[[LINK](https://howtheyvote.github.io/tutorials/lab/index.html?path=co_voting.ipynb)\]
 
 ## Feedback And More
 
