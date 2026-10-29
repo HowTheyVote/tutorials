@@ -11,21 +11,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
         with:
-          python-version: '3.11'
-      - name: Install the dependencies
-        run: |
-          python -m pip install -r requirements.txt
-      - name: Assemble /content directory
-        run: |
-          cp README.md content
-          wget https://github.com/HowTheyVote/data/releases/latest/download/export.zip
-          unzip export.zip -d content/data/
-          find content/data -type f ! -name "*.csv" -delete
+          version: latest
+
+      - name: Install dependencies
+        run: uv sync --locked
+
       - name: Build JupyterLite site
-        run: jupyter lite build --contents content --output-dir dist
+        run: make build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
